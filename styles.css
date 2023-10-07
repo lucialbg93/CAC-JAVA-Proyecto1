@@ -1,0 +1,419 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:10px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+    background-color: rgb(53, 58, 64);
+    
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(53, 58, 64);
+    color: beige;
+    align-items: center;
+    
+}
+
+.logo_inicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: initial;
+    padding-top: 20px;
+    padding-left: 20px;
+    /*width: 100%;
+    max-width: 250px;
+    margin: 10px 50px;*/
+}
+.logo_inicio a img{
+    width: 100%;
+    max-width: 120px;
+    cursor: pointer;
+}
+
+.logo_inicio h2{
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+/*
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0px 50px;
+}*/
+
+.nav1 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    margin-right: 40px;
+    
+}
+
+.nav1 ul li{
+        margin: 0 10px;
+    }
+
+.nav1 ul li a {
+    /* hacer que se ilumine cuando pasa el cursor por el nombre*/
+        text-decoration: none;
+        color: gray;
+        font-size: 15px;
+        font-weight: 400;
+        /*transition: all 0.3s ease-in-out;*/
+        
+        /*cursor: pointer;*/
+    }
+.nav1 ul li a:hover {
+        color: rgba(255, 255, 255, 1) !important;
+        /*box-shadow: 0 4px 16px rgba(49, 138, 172, 1);*/
+        transition: all 0.2s ease;
+}
+#colorverde {
+    color: rgb(41, 167, 68);
+}
+
+/*encabezado grande con la foto del palacio*/
+.encabezado2{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../CAC-JAVA-Proyecto1/assets/img/ba1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 84.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.seccion_ppal{
+    padding: 150px 100px 100px 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.seccion_ppal h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.botones{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+#quieroserorador{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+#comprartickets{
+    padding: 10px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: green;
+
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+/*la parte del main - ORADORES*/
+#oradores {
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    margin-top: 10px;
+    text-align: center;
+}
+.titulo h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+.titulo h2 div{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/*las tarjetas*/
+.tarjetas{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 300px);
+    margin: 10px auto 60px auto;
+}
+
+.orador{
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.imgorador{
+    width: 300px;
+    /*height: 300px;
+    border-radius: 5px 5px 0 0;
+    margin-left: 40px;*/
+}
+/*nombre orador */
+.nombre {
+    margin-left: 25px;
+    margin-top: 3px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+}
+/*texto orador*/
+.orador p {
+    margin: 15px 20px 20px 25px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: black;
+}
+
+.etiquetitas{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 15px;
+    
+}
+
+.etiquetaamarilla{
+    background-color: #fec107;
+    text-align: center;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.etiquetaceleste{
+    background-color: rgb(29, 159, 183);
+    text-align: center;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.etiquetagris{
+    background-color: #6c757d;
+    text-align: center;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.etiquetaroja {
+    background-color: red;
+    text-align: center;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/*seccion lugar fecha*/
+.lugarFecha {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: row;
+    border-top: 1px solid white;
+    width: 100%;
+    
+    
+    
+}
+
+.fotohonolulu{
+    width: 50%;
+    
+}
+
+.lugartexto{
+    background: rgb(53, 58, 64);
+    border-left: white 1px solid;
+    padding-left: 10px;
+    width: 50% ;
+}
+
+.titulolugar{
+    display: flex;
+    align-items: flex-start;
+    background: rgb(53,58,64);
+    color: white;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    padding: 30px;
+    padding-left: 10px;
+    height: 80px;
+}
+
+.descriplugar {
+    color: white;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    display: block;
+}
+
+.conoceMas{
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    /*font-weight: 300;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px*/
+
+}
+
+#conoceMas{
+    /*display: inline-block;*/
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.formularioEncabezado h2 {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: 300;
+    color: rgb(48, 47, 47);
+    padding: 20px;
+}
+
+.formularioEncabezado p {
+    text-align: center;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    color: rgb(48, 47, 47);
+    font-size: small;
+}
+
+.orador{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(48, 47, 47);
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+.contenidoform {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenidoform p {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: small;
+    color: rgb(156, 152, 152);
+    padding: 8px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    
+}
+
+.classnombre {
+    margin-right: 40px;
+    box-sizing: 60px;
+   
+}
+
+input {
+    padding: 5px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    width: 300px;
+}
+
+textarea {
+    width: 640px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    padding: 5px;
+}
+
+.botonEnviar input {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: rgb(150,201,62);
+    border-radius: 5px;
+    width: 640px;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid  rgb(150,201,62);
+    padding: 10px;
+}

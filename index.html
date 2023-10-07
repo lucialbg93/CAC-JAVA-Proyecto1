@@ -5,118 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador Front | Lucia Gonzalez</title>
     <!--favicon-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <header>
-            <a href="#">   
-                <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0">
-            </a>
-            <h2>Conf Bs As</h2>
-            <nav>
+    <header >
+        <div class="encabezado">
+            <div class="logo_inicio">
+                <a href="#">   
+                    <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0">
+                </a>
+                <h2>Conf Bs As</h2>
+            </div>
+            <nav class="nav1">
                 <ul>
-                    <li><a href="">La conferencia</a></li>
+                    <li class="li"><a href="">La conferencia</a></li>
                     <li><a href="">Los oradores</a></li>
                     <li><a href="">El lugar y la fecha</a></li>
                     <li><a href="">Conviertete en orador</a></li>
-                    <li><a href="">Comprar tickets</a></li>
+                    <li><a id="colorverde" href="">Comprar tickets</a></li>
                 </ul>
             </nav>
-            <section>
+        </div>
+        <div class="encabezado2">
+            <section class="seccion_ppal">
                 <!--<img src="" alt="imagen del palacio de aguas argentinas">-->
                 <h1>Conferencia Buenos Aires</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae reiciendis, tempora doloremque corporis unde cupiditate, veritatis, earum quasi atque illo nostrum iste exercitationem maxime nemo eos pariatur! Earum, laboriosam.
+                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad de conocimientoy experiencia de los expertos que están creados creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo  y los oradores de primer nivel que tenemos para ti. Te esperamos!
                 </p>
-                <a href="">Quiero ser orador</a>
-                <a href="">Comprar tickets</a>
+                <div class="botones">
+                    <a id="quieroserorador" href="">Quiero ser orador</a>
+                    <a id="comprartickets" href="">Comprar tickets</a>
+                </div>
+                
             </section>
+        </div>
         </header>
         
-        <main>
-          <section id="oradores">
-            <h2><div>Conoce a los</div> oradores</h2>
-
-            <div>
-                <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs rostro completo con celular en la mano" width="600" loading="lazy">
-                <h4>Javascript</h4>
-                <h4>React Native</h4>
-                <h3>Steve Jobs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex quidem rem voluptate corporis molestias minus quas, eaque repellat, at modi! Consequatur facilis aut magnam accusantium temporibus obcaecati expedita? Impedit?</p>
+        <main class="main">
+          <section class="oradores" id="oradores">
+            <div class="titulo">
+                <h2><div>CONOCE A LOS</div> ORADORES</h2>
             </div>
-            
-            <div>
-                <img src="./assets/img/bill.jpg" alt="bill gates" loading="lazy">
-                <h4>Sistemas Operativos</h4>
-                <h4>C++</h4>
-                <h3>Bill Gates</h3>
-                <p></p>
-            </div>
-            <div>
-                <img src="./assets/img/ada.jpeg" alt="Ada Lovelace" loading="lazy">
-                <h4>Algoritmos</h4>
-                <h4>Cobol</h4>
-                <h3>Ada Lovelace</h3>
-                <p></p>
+            <div class="tarjetas">
+                <div class="orador">
+                    <img class="imgorador" src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs rostro completo con celular en la mano" width="600" loading="lazy">
+                    <div class="etiquetitas">
+                        <h4 class="etiquetaamarilla">Javascript</h4>
+                        <h4 class="etiquetaceleste">React</h4>
+                    </div>
+                    <h3 class="nombre">Steve Jobs</h3>
+                    <p> Quisquam ex quidem rem voluptate corporis molestias minus quas, eaque repellat, at modi! Consequatur facilis aut magnam accusantium temporibus obcaecati expedita? Impedit?</p>
+                </div>
+                
+                <div class="orador">
+                    <img class="imgorador" src="./assets/img/bill.jpg" alt="bill gates" loading="lazy">
+                    <div class="etiquetitas">
+                        <h4 class="etiquetaamarilla">Javascript</h4>
+                        <h4 class="etiquetaceleste">React</h4>
+                    </div>
+                    <h3 class="nombre">Bill Gates</h3>
+                    <p>Loreelit. Culpa, ea. Perspiciatis tempora animi dolore voluptatem sit aut illo nulla, laborum iure porro! Fuga, ea quaerat qui vero sit incidunt odio?</p>
+                </div>
+                <div class="orador">
+                    <img class="imgorador" src="./assets/img/ada.jpeg" alt="Ada Lovelace" loading="lazy">
+                    <div class="etiquetitas">
+                        <h4 class="etiquetagris">Negocios</h4>
+                        <h4 class="etiquetaroja">Startups</h4>
+                    </div>
+                    <h3 class="nombre">Ada Lovelace</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque culpa magnam molestias doloremque magni voluptatibus quisquam quis ea molestiae deserunt alias asperiores voluptates, adipisci numquam hic recusandae soluta. Tempora, blanditiis?</p>
+                </div>
             </div>
         </section>
 
-          <section id="lugarFecha">
-            <img src="./assets/img/honolulu.jpg" alt="Mar del plata" width="600" loading="lazy">
-            <h2>Bs As - Octubre</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia blanditiis quae reprehenderit ex, repudiandae eligendi hic! Voluptas, autem vel ut ratione omnis modi molestiae error sint quia aliquam repellendus magnam!</p>
-            <a href="./pages/404.html">Conoce más</a>
-          </section>
-
-          <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237167395!2d-58.39758742425996!3d-34.60070657295539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses!2sar!4v1692228848422!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
-
-          <section id="formularioOrador">
-            <h2>Conviertete en orador</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat ea laudantium nobis assumenda error dolores? Eos numquam hic officia quibusdam beatae sed quasi ducimus qui obcaecati, molestias laboriosam repudiandae.</p>
-            <form action="./pages/404.html" method="get">
-                <div>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+          <!-- <section class="lugarFecha">
+            <img class="fotohonolulu" src="./assets/img/honolulu.jpg" alt="Mar del plata" width="600" loading="lazy">
+            <div class="lugartexto">
+                <h2 class="titulolugar">Bs As - Octubre</h2>
+                <p class="descriplugar">Buenos Aires es la provincia y localidad más grande del estado de Argentina, el los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                <div class="conoceMas">
+                    <a id="conoceMas" href="./pages/404.html">Conoce más</a>
                 </div>
-                <br>
-                <div>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@servidor.com">
-                    <input type="password" placeholder="contraseña">
-                </div>
+            </div>
+          </section> -->
+
+
+          <!-- <section id="formularioOrador">
+            <div class="formularioEncabezado">
+                <h2>CONVIERTETE EN UN <div class="orador">ORADOR</div></h2>
+                <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+            </div>
+            <div class="contenidoform">
+                <form action="./pages/404.html" method="get">
+                    <div class="datos">
+                        <div class="classnombre"><input type="text" id="name" name="name" placeholder="Nombre" required></div>
+                        <div class="classapellido"><input type="text" name="apellido" id="apellido" placeholder="Apellido" required></div>
+                    </div>
+            
                 <br>
                 <div>
                     <textarea name="comentario" id="comentario" cols="55" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
                 </div>
-                <div>
-                    <input type="reset" value="Limpiar formulario">
-                    <input type="submit" value="Enviar formulario">
+                <p>Recuerda incluir un titulo para tu charla</p>
+                <div class="botonEnviar">
+                    <input type="submit" value="Enviar">
                 </div>
+            </div>
             </form>
-          </section>
+          </section> -->
          
-        </main>
-        <aside>
-            <p>PUBLICIDAD</p>
-            <div>
-                <iframe width="400" height="500"  src="https://www.youtube.com/embed/ptXiQwE535s?controls=0&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-                <p>texto pequeño</p>
-            </div>
-            <div>
-                <iframe width="400"  src="https://www.youtube.com/embed/ptXiQwE535s?controls=0&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>texto pequeño 2</p>
-            </div>
-            <div>
-                <iframe width="400"  src="https://www.youtube.com/embed/SIotISUq-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>texto pequeño 3</p>
-            </div>
-        </aside>
+        </main> 
+        
       
        
-        <footer>
-            FOOTER
-        </footer>
+        <!-- <footer>
+            <nav>
+                <ul>
+                    <li><a href="">Preguntas Frecunetes</a></li>
+                    <li><a href="">Contáctanos</a></li>
+                    <li><a href="">Prensa</a></li>
+                    <li><a href="">Conferencias</a></li>
+                    <li><a href="">Términos y Condiciones</a></li>
+                    <li><a href="">Privacidad</a></li>
+                    <li><a href="">Estudiantes</a></li>
+                </ul>
+            </nav>
+        </footer> --> 
 </body>
 </html>
