@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     padding: 10px;
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: 'Courgette', cursive;
+    font-family: 'Noto Sans Shavian', sans-serif;
 }
 
 .encabezado{
@@ -144,6 +146,7 @@ body {
     
     display: flex;
     flex-direction: column;
+    /*font-family: "Poppins", Arial, sans-serif;*/
     .oradores{
         
         .titulo{
@@ -237,6 +240,7 @@ body {
                     font-weight: 500;
                     font-size: 22px;
                     text-align: left;
+                    padding: 2px;
                 }
                 /*texto orador*/
                 
@@ -252,43 +256,179 @@ body {
                 
         }
 }
-
-
-/*
-.main {
-    height: 98vh;
-
-    .oradores {
-        display: flex;
-        flex-direction: column;
-        height: 98vh;
-        .titulo{
-            color: aqua;
+    .lugarFecha {
+        .fotohonolulu {
+            width: 100%;
+        }
+        .lugartexto {
+            background: rgb(53, 58, 64);
+            border-left: white 1px solid;
+            padding-left: 10px;
+            width: 100% ;
+            padding: 50px;
+            .titulolugar{
+                /*display: flex;
+                align-items: flex-start;*/
+                /*background: rgb(53,58,64);*/
+                color: white;
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                font-size: large;
+                font-weight: 700;
+                padding: 30px;
+                padding-left: 10px;
+                height: 80px;
+            }
+            .descriplugar {
+                color: white;
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 20px;
+                padding-bottom: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                display: block;
+            }
+            .conoceMas{
+                display: inline-block;
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                #conoceMas {
+                    font-weight: 300;
+                    font-size: 15px;
+                    border: 1px solid white;
+                    border-radius: 3px;
+                    padding: 5px;
+                    margin-left: 10px;
+                    text-decoration: none;
+                    color: #dddddd;
+                }
+            }
         }
     }
-    .lugarFecha {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        row-gap: 10px;
-        .fotohonolulu {
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 50%;
+
+    .formularioOrador {
+
+        .formularioEncabezado {
+            .convenun{
+            
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                text-align: center;
+                font-size: medium;
+                font-weight: 300;
+                color: rgb(0, 0, 0);
+                padding: 20px;
+            }
+            .orador {
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                font-size: xx-large;
+                font-weight: 700;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                border: 1px solid white;
+                box-shadow: none;
+            }
+            .textoformulario {
+                text-align: center;
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                color: rgb(0, 0, 0);
+                font-size: small;
+            }
+            
         }
-        .lugartexto{
-            width: 100%;
-            height: 50%;
-            background-color: bisque;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            color: black;
+
+        .contenidoform {
+            .contenidoform__hijo{
+                .datos {
+                    /*display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;*/
+                    padding-left: 10px;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                    
+                    .classnombre {
+                        /*margin-right: 40px;*/
+                        /*box-sizing: 100px;*/
+                        
+                        
+                        padding: 10px;
+                        #name {
+                            padding: 5px;
+                            /*font-family: "Poppins", Arial, sans-serif;*/
+                            width: 300px;
+                            
+                        }
+                        
+                    }
+                    .classapellido {
+                        /*margin-right: 40px;*/
+                        box-sizing: 100px;
+                        
+                        padding: 10px;
+                        #apellido {
+                            padding: 5px;
+                            font-family: "Poppins", Arial, sans-serif;
+                            width: 300px;
+                            
+                        }
+                }
+            }
+            .comentario {
+                width: 98%;
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                padding: 5px;
+                margin-left: 20px;
+                #comentario{
+                    padding: 5px;
+                }
+            }
+            .contenidoform__nota{
+                /*font-family: "Poppins", Arial, sans-serif;*/
+                font-size: small;
+                color: rgb(156, 152, 152);
+                padding: 10px;
+            }
+            .botonEnviar input {
+                width: 100%;
+                /*font-family: font-family: "Poppins", Arial, sans-serif;*/
+                font-weight: 300;
+                font-size: 20px;
+                background-color: rgb(150,201,62);
+                border-radius: 5px;
+                
+                color: white;
+                margin-bottom: 10px;
+                border: 1px solid  rgb(150,201,62);
+                padding: 10px;
+            }
+            
         }
         
-    }*/
+    }
+    }}
 
-
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+    background: linear-gradient(to right, rgb(22, 39, 47), rgb(29, 82, 113));
+    .footer__nav ul{
+        list-style: none;
+    }
+    .footer__nav ul li{
+        padding: 5px;
+    }
+    .footer__nav ul li a {
+        /* hacer que se ilumine cuando pasa el cursor por el nombre*/
+            color: white;
+            /*font-family: 'Noto Sans Shavian', sans-serif;*/
+            text-decoration: none;
+            /*font-family: "Poppins", Arial, sans-serif !important;*/
+            font-size: 15px;
+            font-weight: 400;
+}
+}

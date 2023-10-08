@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador Front | Lucia Gonzalez</title>
     <!--favicon-->
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" media="only screen and (max-width: 576px)" href="styles2.css">
+    <link rel="stylesheet" media="only screen and (min-width: 991px)" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+Shavian&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header >
         <div class="encabezado">
@@ -31,7 +37,7 @@
                 <!--<img src="" alt="imagen del palacio de aguas argentinas">-->
                 <h1>Conferencia Buenos Aires</h1>
                 <p>
-                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad de conocimientoy experiencia de los expertos que están creados creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo  y los oradores de primer nivel que tenemos para ti. Te esperamos!
+                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad de conocimiento y experiencia de los expertos que están creados creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo  y los oradores de primer nivel que tenemos para ti. Te esperamos!
                 </p>
                 <div class="botones">
                     <a id="quieroserorador" href="">Quiero ser orador</a>
@@ -43,7 +49,7 @@
         </header>
         
         <main class="main">
-          <section class="oradores" id="oradores">
+          <section class="oradores" >
             <div class="titulo">
                 <h2><div>CONOCE A LOS</div> ORADORES</h2>
             </div>
@@ -79,7 +85,7 @@
             </div>
         </section>
 
-          <!-- <section class="lugarFecha">
+          <section class="lugarFecha">
             <img class="fotohonolulu" src="./assets/img/honolulu.jpg" alt="Mar del plata" width="600" loading="lazy">
             <div class="lugartexto">
                 <h2 class="titulolugar">Bs As - Octubre</h2>
@@ -88,41 +94,41 @@
                     <a id="conoceMas" href="./pages/404.html">Conoce más</a>
                 </div>
             </div>
-          </section> -->
+          </section>
 
 
-          <!-- <section id="formularioOrador">
+          <section class="formularioOrador">
             <div class="formularioEncabezado">
-                <h2>CONVIERTETE EN UN <div class="orador">ORADOR</div></h2>
-                <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+                <h2 class="convenun">CONVIERTETE EN UN <div class="orador">ORADOR</div></h2>
+                <p class="textoformulario">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
             </div>
             <div class="contenidoform">
-                <form action="./pages/404.html" method="get">
+                <form class="contenidoform__hijo" action="./pages/404.html" method="get">
                     <div class="datos">
                         <div class="classnombre"><input type="text" id="name" name="name" placeholder="Nombre" required></div>
                         <div class="classapellido"><input type="text" name="apellido" id="apellido" placeholder="Apellido" required></div>
                     </div>
             
                 <br>
-                <div>
+                <div class="comentario">
                     <textarea name="comentario" id="comentario" cols="55" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
                 </div>
-                <p>Recuerda incluir un titulo para tu charla</p>
+                <p class="contenidoform__nota">Recuerda incluir un titulo para tu charla</p>
                 <div class="botonEnviar">
                     <input type="submit" value="Enviar">
                 </div>
             </div>
             </form>
-          </section> -->
+          </section>
          
         </main> 
         
       
        
-        <!-- <footer>
-            <nav>
+        <footer class="footer">
+            <nav class="footer__nav">
                 <ul>
-                    <li><a href="">Preguntas Frecunetes</a></li>
+                    <li><a href="">Preguntas Frecuentes</a></li>
                     <li><a href="">Contáctanos</a></li>
                     <li><a href="">Prensa</a></li>
                     <li><a href="">Conferencias</a></li>
@@ -131,6 +137,6 @@
                     <li><a href="">Estudiantes</a></li>
                 </ul>
             </nav>
-        </footer> --> 
+        </footer> 
 </body>
 </html>
