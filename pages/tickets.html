@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador Front | Lucia Gonzalez</title>
+    <!--favicon-->
+    <!-- <link rel="stylesheet" media="only screen and (max-width: 576px)" href="styles2.css"> -->
+    <link rel="stylesheet" media="only screen and (min-width: 991px)" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+Shavian&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header >
+        <div class="encabezado">
+            <div class="logo_inicio">
+                <a href="#">   
+                    <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0">
+                </a>
+                <h2>Conf Bs As</h2>
+            </div>
+            <nav class="nav1">
+                <ul>
+                    <li class="li"><a href="">La conferencia</a></li>
+                    <li><a href="">Los oradores</a></li>
+                    <li><a href="">El lugar y la fecha</a></li>
+                    <li><a href="">Conviertete en orador</a></li>
+                    <li><a id="colorverde" href="">Comprar tickets</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        
+        <main class="tickets">
+          <section class="tarjetas__seccion" >
+            
+            <div class="tarjetas__tickets">
+                <div class="tarjeta">
+                    <h3 class="categoria__titulo">Estudiante</h3>
+                    <p class="categoria__p">Tienen un descuento</p>
+                    <h2 class="categoria__porcentaje">80%</h2>
+                    <p class="categoria__ast">* presentar documentación</p>
+                </div>
+                
+                
+                    <div class="tarjeta">
+                        <h3 class="categoria__titulo">Trainee</h3>
+                        <p class="categoria__p">Tienen un descuento</p>
+                        <h2 class="categoria__porcentaje">50%</h2>
+                        <p class="categoria__ast">* presentar documentación</p>
+                    </div>
+                
+                
+                    <div class="tarjeta">
+                        <h3 class="categoria__titulo">Junior</h3>
+                        <p class="categoria__p">Tienen un descuento</p>
+                        <h2 class="categoria__porcentaje">15%</h2>
+                        <p class="categoria__ast">* presentar documentación</p>
+                    </div>
+                
+            </div>
+        </section>
+
+          <section class="facturacion">
+            <div class="formularioEncabezado">
+                <p class="titulo__uno"> VENTA </p>
+                <h2 class="valorticket">VALOR DE TICKET $200</h2>
+            </div>
+            <div class="contenidoform">
+                <form class="contenidoform__hijo" action="./pages/404.html" method="get">
+                    <div class="datos">
+                        <div class="classnombre"><input type="text" id="name" name="name" placeholder="Nombre" required></div>
+                        <div class="classapellido"><input type="text" name="apellido" id="apellido" placeholder="Apellido" required></div>
+                    </div>
+            
+                <br>
+                <div class="correo">
+                    <div><input type="email" id="email" name="email" placeholder="Correo"></div>
+                </div>
+                <div class="precio">
+                    <div class="precio__cantidad">
+                        <h3 class="titulo__cantidad">Cantidad</h3>
+                        <div class="cantidad"><input type="number" id="cantidad" name="cantidad" placeholder="cantidad" required></div>
+                    </div>
+                    <div class="precio__categoria">
+                        <h3 class="titulo__categoria">Categoria</h3>
+                        <div>
+                            <select name="menu__categorias" id="menu__categorias">
+                                <option value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <div class="boton__borrar">
+                        <input type="submit" id="boton__borrar" value="Borrar">
+                    </div>
+                    <div class="boton__resumen">
+                        <input type="submit" id="boton__resumen" value="Resumen">
+                    </div>
+                </div>
+                
+            </div>
+            </form>
+          </section>
+         
+        </main> 
+        
+      
+       
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="">Preguntas Frecuentes</a></li>
+                    <li><a href="">Contáctanos</a></li>
+                    <li><a href="">Prensa</a></li>
+                    <li><a href="">Conferencias</a></li>
+                    <li><a href="">Términos y Condiciones</a></li>
+                    <li><a href="">Privacidad</a></li>
+                    <li><a href="">Estudiantes</a></li>
+                </ul>
+            </nav>
+        </footer> 
+</body>
+</html>

@@ -1,0 +1,336 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:10px;
+    font-family: 'Courgette', cursive;
+    font-family: 'Noto Sans Shavian', sans-serif;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    color: white;
+    position: relative;
+    background-color: rgb(53, 58, 64);
+    
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(53, 58, 64);
+    color: beige;
+    align-items: center;
+    .logo_inicio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: initial;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+    .logo_inicio a img{
+        width: 100%;
+        max-width: 120px;
+        cursor: pointer;
+    }
+    .logo_inicio h2{
+        font-size: 22px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+    }
+    .nav1 ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        list-style: none;
+        margin: 0;
+        padding: 0px;
+        margin-right: 40px;
+        
+    }
+    
+    .nav1 ul li{
+            margin: 0 10px;
+        }
+    
+    .nav1 ul li a {
+       
+            text-decoration: none;
+            color: gray;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    .nav1 ul li a:hover {
+            color: rgba(255, 255, 255, 1) !important;
+            /*box-shadow: 0 4px 16px rgba(49, 138, 172, 1);*/
+            transition: all 0.2s ease;
+    }
+    #colorverde {
+        color: rgb(41, 167, 68);
+    }
+}
+
+.tickets{
+    .tarjetas__seccion{
+        padding-top: 10px;
+        /*background-color: bisque;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tarjetas__tickets{
+            background-color: white;
+            display: grid;
+            column-gap: 20px;
+            grid-template-columns: repeat(3, 300px);
+            margin: 60px auto 10px auto;
+            
+            .tarjeta{
+                width: 300px; 
+                height: 300px; 
+                /*border: 3px solid #981111;*/
+                box-sizing: border-box;
+                
+                border-width: 4px;
+                border-style: solid;
+                border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+                text-align: center;
+                
+                .categoria__titulo{
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+                    
+                }
+                .categoria__p{
+                    margin-bottom: 30px;
+                }
+                .categoria__porcentaje{
+                    margin-bottom: 30px;
+                }
+                .categoria__ast{
+                    color: gray;
+                    font-size: 15px;
+
+                }
+            }
+        }
+    }
+}
+
+.facturacion{
+    .formularioEncabezado{
+        .titulo__uno{
+            /*margin-top: 10px;*/
+            text-align: center;
+        }
+        .valorticket{
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+        .contenidoform{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+                /*align-items: center;*/
+                .datos{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 10px;
+                    /*align-items: center;*/
+                    padding-top: 15px;
+                    padding-bottom: 3px;
+                    .classnombre{
+                            margin-right: 50px;
+                            box-sizing: 70px;
+                        }
+                    .classapellido{
+                        margin-right: 40px;
+                        box-sizing: 160px;
+                    }
+                    #name {
+                        
+                        width: 450px;
+                        font-family: 'Noto Sans Shavian', sans-serif;
+                        font-size: medium;
+                        color: rgb(156, 152, 152);
+                        padding: 8px;
+                    }
+                    #apellido {
+                        
+                        width: 450px;
+                        font-family: 'Noto Sans Shavian', sans-serif;
+                        font-size: medium;
+                        color: rgb(156, 152, 152);
+                        padding: 8px;
+                    }
+            }
+                .correo{
+                    margin-right: 40px;
+                    box-sizing: 60px;
+                    padding: 10px;
+                    
+                }
+                #email{
+                    padding: 5px;
+                    
+                    width: 960px;
+                    font-family: 'Noto Sans Shavian', sans-serif;
+                    font-size: medium;
+                    color: rgb(156, 152, 152);
+                    padding: 8px;
+                }
+                .precio{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    .precio__cantidad{
+                        padding: 10px;
+                        font-size: small;
+                        .titulo__cantidad{
+                            margin-bottom: 5px;
+                            /*font-family: 'Noto Sans Shavian', sans-serif;*/
+                            font-size: medium;
+                            
+                        }
+                       
+                        #cantidad{
+                            
+                            width: 450px;
+                            font-family: 'Noto Sans Shavian', sans-serif;
+                            font-size: medium;
+                            color: rgb(156, 152, 152);
+                            padding: 8px;
+                        }
+                    }
+                    .precio__categoria{
+                        padding: 10px;
+                        font-size: small;
+                        margin-left: 40px;
+                        .titulo__categoria{
+                            margin-bottom: 5px;
+                        }
+                        #menu__categorias{
+                            width: 450px;
+                            font-family: 'Noto Sans Shavian', sans-serif;
+                            font-size: medium;
+                            color: rgb(156, 152, 152);
+                            padding: 8px;
+                        }
+
+                    }
+                    
+                }
+                .botones{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 10px;
+                    .boton__borrar input{
+                        font-family: 'Noto Sans Shavian', sans-serif;
+                        font-weight: 300;
+                        font-size: 20px;
+                        background-color: rgb(150,201,62);
+                        border-radius: 5px;
+                        width: 450px;
+                        color: white;
+                        margin-bottom: 10px;
+                        border: 1px solid  rgb(150,201,62);
+                        padding: 10px;
+                        
+                    }
+                    #boton__borrar:hover {
+                        box-shadow:0 4px 10px rgb(160, 171, 45) !important;
+                        /*box-shadow: 0 4px 16px rgba(49, 138, 172, 1);*/
+                        transition: all 0.2s ease;
+                    }
+                    .boton__resumen input{
+                        font-family: 'Noto Sans Shavian', sans-serif;
+                        font-weight: 300;
+                        font-size: 20px;
+                        background-color: rgb(150,201,62);
+                        border-radius: 5px;
+                        width: 450px;
+                        color: white;
+                        margin-bottom: 10px;
+                        margin-right: 40px;
+                        border: 1px solid  rgb(150,201,62);
+                        padding: 10px;
+                    }
+                    #boton__resumen:hover {
+                        box-shadow:0 4px 10px rgb(160, 171, 45) !important;
+                        /*box-shadow: 0 4px 16px rgba(49, 138, 172, 1);*/
+                        transition: all 0.2s ease;
+                    }
+            }
+        }
+    }
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+    background: linear-gradient(to right, rgb(22, 39, 47), rgb(29, 82, 113));
+    .footer__nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .footer__nav ul li{
+        padding: 10px;
+        margin: 10px;
+    }
+    .footer__nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+    }
+    .footer__nav ul li a:hover {
+        text-shadow:0 4px 16px rgba(255, 255, 255, 1) !important;
+        /*box-shadow: 0 4px 16px rgba(49, 138, 172, 1);*/
+        transition: all 0.2s ease;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+    background: linear-gradient(to right, rgb(22, 39, 47), rgb(29, 82, 113));
+    .footer__nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .footer__nav ul li{
+        padding: 10px;
+        margin: 10px;
+    }
+    .footer__nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+    }
+    .footer__nav ul li a:hover {
+        text-shadow:0 4px 16px rgba(255, 255, 255, 1) !important;
+        /*box-shadow: 0 4px 16px rgba(49, 138, 172, 1);*/
+        transition: all 0.2s ease;
+    }
+}
