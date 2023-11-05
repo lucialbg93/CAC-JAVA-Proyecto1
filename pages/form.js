@@ -12,11 +12,11 @@ let email = document.getElementById("email");
 let cantidad = document.getElementById("cantidad");
 let menu__categoria = document.getElementById("menu__categorias");
 
-/*const quitarClaseError = () => {
+const quitarClaseError = () => {
     let listaNodos = document.querySelectorAll('.form-control');
     for (let i=0; i < listaNodos.length; i++){
-        listaNodos[i].classList.remove('is-invalid');
-    }
+        listaNodos[i].classList.remove('mensajeestilo');
+    }}
     /*let listaNodosdiv = document.querySelectorAll(".invalid-feedback");
     for (let i=0; i < listaNodosdiv.length; i++){
         listaNodosdiv[i].classList.remove('is-invalid');
@@ -39,14 +39,10 @@ let menu__categoria = document.getElementById("menu__categorias");
 }*/
 
 const btnEnviar = document.getElementById('boton__resumen');
-
+const btnBorrar = document.getElementById('boton__borrar');
+const totalpago = document.getElementById('totalpago')
 const validate = () => {
-  
-  //e.preventDefault();
-  
-  //const nombre = document.getElementById('usuario');
-  //const direcciónEmail = document.getElementById('email');
-  //quitarClaseError();
+
   if (nombre.value === "") {
     //alert("Por favor, escribe tu nombre de usuario.");
     const coso = document.getElementById('classnombre');
@@ -103,8 +99,39 @@ const validate = () => {
     return false;
   }
 
+  let totalValorTickets = (cantidad.value) * valorTicket;
+
+  switch (menu__categoria.value) {
+    case "0":
+      totalValorTickets = totalValorTickets;
+      break;
+    case "estudiante":
+      totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
+      break;
+    case "trainee":
+      totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
+      break;
+    case "junior":
+      totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
+      break;
+  }
+  totalpago.innerHTML = totalValorTickets;
+
+
   return true;
 }
 
 btnEnviar.addEventListener('click', validate);
 
+const resetTotalaPagar = () => {
+  let formulario = document.getElementById("formu");
+  formulario.reset();
+  /*let divErrorNombre = document.getElementById("msjErrorNombre");
+  let apellido = document.getElementById("apellido");
+  let email = document.getElementById("email");
+  let cantidad = document.getElementById("cantidad");
+  let menu__categoria = document.getElementById("menu__categorias");
+  totalPago.innerHTML = "";*/
+}
+
+btnBorrar.addEventListener('click', resetTotalaPagar)

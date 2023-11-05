@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador Front | Lucia Gonzalez</title>
     <!--favicon-->
-    <link rel="stylesheet" media="only screen and (max-width: 576px)" href="styles2.css">
+    <link rel="stylesheet" media="only screen and (max-width: 990px)" href="styles2.css">
     <link rel="stylesheet" media="only screen and (min-width: 991px)" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,7 +70,7 @@
                 <h2 class="valorticket">VALOR DE TICKET $200</h2>
             </div>
             <div class="contenidoform">
-                <form class="contenidoform__hijo" action="./pages/404.html" method="get">
+                <form class="contenidoform__hijo" id="formu" action="./pages/404.html" method="get">
                     <div class="datos" id="datos">
                         <div class="classnombre" id="classnombre"><input type="text" class="form-control" id="name" name="name" placeholder="Nombre"></div>
                         
@@ -106,7 +106,14 @@
                         <input type="submit" id="boton__resumen" value="Resumen">
                     </div>
                 </div>
+                <div class="cajaceleste">
+                    <div class="descrip">Total a pagar $</div> 
+                    <div class="totalpago" id="totalpago">
+                    
+                    </div>
+                </div>
                 
+                <br>
             </div>
             </form>
           </section>

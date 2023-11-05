@@ -300,6 +300,22 @@ body {
                         transition: all 0.2s ease;
                     }
             }
+            .cajaceleste{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #b6c3db;
+                background-color: #b6c3db;
+                border-radius: 3px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 20px;
+                .descrip{
+                    padding-right: 5px;
+                }
+            }
         }
     }
     .footer{
