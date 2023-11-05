@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador Front | Lucia Gonzalez</title>
     <!--favicon-->
-    <!-- <link rel="stylesheet" media="only screen and (max-width: 576px)" href="styles2.css"> -->
+    <link rel="stylesheet" media="only screen and (max-width: 576px)" href="styles2.css">
     <link rel="stylesheet" media="only screen and (min-width: 991px)" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <header >
         <div class="encabezado">
             <div class="logo_inicio">
-                <a href="#">   
+                <a href="../index.html">   
                     <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0">
                 </a>
                 <h2>Conf Bs As</h2>
@@ -46,7 +46,7 @@
                 </div>
                 
                 
-                    <div class="tarjeta">
+                    <div class="tarjeta" id="tarjeta__trainee">
                         <h3 class="categoria__titulo">Trainee</h3>
                         <p class="categoria__p">Tienen un descuento</p>
                         <h2 class="categoria__porcentaje">50%</h2>
@@ -54,7 +54,7 @@
                     </div>
                 
                 
-                    <div class="tarjeta">
+                    <div class="tarjeta" id="tarjeta__junior">
                         <h3 class="categoria__titulo">Junior</h3>
                         <p class="categoria__p">Tienen un descuento</p>
                         <h2 class="categoria__porcentaje">15%</h2>
@@ -71,24 +71,26 @@
             </div>
             <div class="contenidoform">
                 <form class="contenidoform__hijo" action="./pages/404.html" method="get">
-                    <div class="datos">
-                        <div class="classnombre"><input type="text" id="name" name="name" placeholder="Nombre" required></div>
-                        <div class="classapellido"><input type="text" name="apellido" id="apellido" placeholder="Apellido" required></div>
+                    <div class="datos" id="datos">
+                        <div class="classnombre" id="classnombre"><input type="text" class="form-control" id="name" name="name" placeholder="Nombre"></div>
+                        
+                        <div class="classapellido" id="classapellido"><input type="text" name="apellido" id="apellido" placeholder="Apellido" ></div>
                     </div>
             
                 <br>
-                <div class="correo">
+                <div class="correo" id="correo">
                     <div><input type="email" id="email" name="email" placeholder="Correo"></div>
                 </div>
                 <div class="precio">
                     <div class="precio__cantidad">
                         <h3 class="titulo__cantidad">Cantidad</h3>
-                        <div class="cantidad"><input type="number" id="cantidad" name="cantidad" placeholder="cantidad" required></div>
+                        <div class="cantidad" id="cantidad_div"><input type="number" id="cantidad" name="cantidad" placeholder="cantidad" required></div>
                     </div>
-                    <div class="precio__categoria">
+                    <div class="precio__categoria" id="precio__categoria">
                         <h3 class="titulo__categoria">Categoria</h3>
                         <div>
                             <select name="menu__categorias" id="menu__categorias">
+                                <option value="0" selected>Seleccione una categoria</option>
                                 <option value="estudiante">Estudiante</option>
                                 <option value="trainee">Trainee</option>
                                 <option value="junior">Junior</option>
@@ -126,5 +128,6 @@
                 </ul>
             </nav>
         </footer> 
+        <script src="form.js"></script>
 </body>
 </html>
